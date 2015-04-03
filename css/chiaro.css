@@ -1,9 +1,14 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+  color: rgb(41,41,41);
+  font-family: Georgia, 'Cambria', 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 1.6em;
+}
 .container {
-  max-width: 1200px;
-  width: 976px;
+  max-width: 976px;
   margin: 0 auto;
 }
 .row:before,
@@ -18,7 +23,7 @@
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding: 12px;
+  padding: 15px;
   background-color: #F2F2F2;
 }
 .col-1 {
@@ -58,6 +63,7 @@
   width: 100%;
 }
 
+
 /* 
  * Set the offsets
  */
@@ -95,9 +101,20 @@
   margin-left: 100%;
 }
 
+
 /*
- * Text alignment
+ * Text
  */
+a {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  color: rgb(127,127,127);
+  text-decoration: none;
+  padding: 1px 0 2px 0;
+}
+a:hover {
+  color: rgb(178,178,178);
+}
 .left {
   float: left;
 }
@@ -106,4 +123,135 @@
 }
 .right {
   float: right;
+}
+
+
+/*
+ * Formatting
+ */
+hr {
+  border: none;
+  border-top: 1px solid;
+  height: 1px;
+  margin: 25px 0 25px 0;
+  text-align: center;
+}
+hr.has--frill:before {
+  background: rgb(255,255,255);
+  content: "| |";
+  display: inline-block;
+  font-size: 0.9em;
+  position: relative;
+  top: -12px;
+}
+p {
+  margin: 20px 0 20px 0;
+}
+p.tab {
+  text-indent: 50px;
+}
+
+/*
+ * Images
+ */
+.img-container {
+  display: inline-block;
+}
+.img-container.img-left {
+  float: left;
+  padding: 0 15px 15px 0;
+}
+.img-container.img-right {
+  float: right;
+  margin: 0 0 0 1.5em;
+}
+.img-footer {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgb(178,178,178);
+  font-size: 11px;
+  color: rgb(127,127,127);
+  padding: 5px 0 5px 0;
+}
+.img-footer p {
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+
+}
+
+/*
+ * Lists
+ */
+
+ul.horizontal-list {
+  list-style-type: none;
+}
+ul.horizontal-list li {
+  display: inline;
+}
+ul.unmarked-list {
+  list-style-type: none;
+}
+
+/*
+ * Media queries
+ */
+
+/*
+ * screen
+ */
+@media only screen 
+  and (max-width: 667px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+  [class*='col-offset-'] {
+    margin: 0;
+  }
+}
+
+/*
+ * iPhone6
+ */
+@media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : landscape) 
+  and (-webkit-min-device-pixel-ratio : 2) { 
+
+}
+@media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : portrait) 
+  and (-webkit-min-device-pixel-ratio : 2) { 
+  [class*='col-'] {
+    width: 100%;
+  }
+  [class*='col-offset-'] {
+    margin: 0;
+  }
+}
+
+/*
+ * iPhone6+
+ */
+@media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) 
+  and (orientation : landscape) 
+  and (-webkit-min-device-pixel-ratio : 3) { 
+}
+@media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) 
+  and (orientation : portrait) 
+  and (-webkit-min-device-pixel-ratio : 3) { 
+  [class*='col-'] {
+    width: 100%;
+  }
+  [class*='col-offset-'] {
+    margin: 0;
+  }
 }
