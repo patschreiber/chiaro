@@ -11,6 +11,10 @@ html, body {
   max-width: 976px;
   margin: 0 auto;
 }
+.long-form-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
 .row:before,
 .row:after {
   clear: both;
@@ -124,6 +128,35 @@ a:hover {
 .right {
   float: right;
 }
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 28px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 22px;
+}
+h1 > a {
+  display: inline-block;
+  border-top: 0;
+  border-bottom: 1px solid;
+  color: rgb(41,41,41);
+}
+h1 > a:hover {
+  border-top: 0;
+  border-bottom: 1px solid;
+  color: rgb(127,127,127);
+}
 
 
 /*
@@ -183,7 +216,6 @@ p.tab {
 /*
  * Lists
  */
-
 ul.horizontal-list {
   list-style-type: none;
 }
