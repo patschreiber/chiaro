@@ -1,0 +1,19 @@
+// Box model rules
+$default-border-style: solid;
+$default-border-width: 1px;
+$default-border-radius: 2px;
+$default-margin: 12px;
+$default-padding: 12px;
+
+// Color rules
+$primary-color: ;
+$primary-color-dark: ;
+$primary-color-light: ;
+$secondary-color: ;
+$secondary-color-dark: ;
+$secondary-color-light: ;
+$default-grey: rgb(51,51,51);
+$default-grey-light: lighten(rgb(51,51,51), 30%);
+
+$default-shadow-color: lighten(rgb(51,51,51), 65%);
+

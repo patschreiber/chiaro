@@ -1,0 +1,22 @@
+@mixin border {
+  border-style: $default-border-style;
+  border-width: $default-border-width;
+  border-radius: $default-border-radius;
+}
+@mixin box-shadow {
+  box-shadow: 0 2px 10px $default-shadow-color,0 2px 4px $default-shadow-color;
+  -moz-box-shadow: 0 2px 10px $default-shadow-color,0 2px 4px $default-shadow-color;
+  -ms-box-shadow: 0 2px 10px $default-shadow-color,0 2px 4px $default-shadow-color;
+  -o-box-shadow: 0 2px 10px $default-shadow-color,0 2px 4px $default-shadow-color;
+  -webkit-box-shadow: 0 2px 10px $default-shadow-color,0 2px 4px $default-shadow-color;
+}
+.box {
+  @include border;
+  border-color: $default-grey-light;
+  color: $default-grey-light;
+  padding: $default-padding;
+}
+.box.floating {
+    @include box-shadow;
+  
+}

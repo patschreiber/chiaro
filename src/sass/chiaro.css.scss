@@ -1,0 +1,21 @@
+
+/*!
+ * Base Chiaro scss file
+ */
+
+// Import variables
+@import "configuration.css.scss";
+
+// Import dependencies
+@import "../css/vendor/normalize.css";
+
+// Import base rules
+// Import layout rules
+@import "grid.css.scss";
+@import "breakpoints.css.scss";
+
+// Import module rules
+@import "boxes.css.scss";
+
+// Import state rules
+// Import theme rules

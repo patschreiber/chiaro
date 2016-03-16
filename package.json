@@ -1,0 +1,33 @@
+{
+  "name": "chiaro",
+  "version": "1.0.0",
+  "description": "Chiaro front-end framework.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patschreiber/chiaro.git"
+  },
+  "keywords": [
+    "chiaro",
+    "framework",
+    "front",
+    "end"
+  ],
+  "author": "Patrick Schreiber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patschreiber/chiaro/issues"
+  },
+  "homepage": "https://github.com/patschreiber/chiaro#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
