@@ -4,34 +4,32 @@
   display: table;
   clear: both;
 }
-[class*='grid-'] {
+[class*='grid-'],
+.one,
+.one-half,
+.one-third,
+.one-fourth  {
   float: left;
   min-height: 1px;
   padding: 12px;
 }
-.c-box-1 {
-  width: 16.66%;
-}
-.c-box-1 {
-  width: 16.66%;
-}
-.grid-2 {
-  width: 33.33%;
-}
-.grid-3 {
-  width: 50%;
-}
-.grid-4 {
-  width: 66.66%;
-}
-.grid-5 {
-  width: 83.33%;
-}
-.grid-6 {
+.one {
   width: 100%;
 }
-@media (max-width: 640px) {
-  [class*='grid-'] {
+.one-half {
+  width: 50%;
+}
+.one-third {
+  width: 33.333333333%;
+}
+.one-fourth {
+  width: 25%;
+}
+@media (max-width: 480px) {
+  .one,
+  .one-half,
+  .one-third,
+  .one-fourth {
     width: 100%;
   }
 }

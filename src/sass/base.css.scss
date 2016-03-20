@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $default-font-color; 
+  font-family: $default-sans-serif, 'Arial', sans-serif;
+  font-size: $p-font-size;
+  max-width: $default-max-body-width;
+}
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+h5 {
+  font-size: $h5-font-size;
+}
+h6 {
+  font-size: $h6-font-size;
+}
+nav {
+  
+}
+p {
+  font-family: $default-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+a {
+  display: inline-block;
+  border-bottom: 1px solid $default-grey;
+  border-left: 1px solid $default-grey;
+  text-decoration: none;
+}
+a::after {
+  @include link-flair;
+  content: ' ';
+  height: 1px;
+  background-color: $default-grey;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  opacity: 0;
+  width: 0;
+}
+a:hover::after {
+  width: 100%;
+  opacity: 1; 
+}
