@@ -38,32 +38,6 @@
   -webkit-transition: box-shadow .175s ease-in-out;
   transition: box-shadow .175s ease-in-out;
 }
-.showcase .item a::before {
-  content: ' ';
-  height: 1px;
-  background-color: rgb(255,255,255);
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  opacity: 0;
-  -moz-transition-duration: .24s;
-  -ms-transition-duration: .24s;
-  -o-transition-duration: .24s;
-  -webkit-transition-duration: .24s;
-  transition-duration: .24s;
-  -moz-transition-property: transform opacity;
-  -ms-transition-property: transform opacity;
-  -o-transition-property: transform opacity;
-  -webkit-transition-property: transform opacity;
-  transition-property: transform opacity;
-  width: 0;
-
-}
-.showcase .item a:hover::before {
-  width: 100%;
-  opacity: 1;
-}
 .showcase .item a:hover {
   @include box-shadow-inset;
 }
