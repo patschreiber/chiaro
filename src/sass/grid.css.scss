@@ -5,7 +5,7 @@
   clear: both;
 }
 [class*='grid-'],
-.one,
+.whole,
 .one-half,
 .one-third,
 .one-fourth  {
@@ -25,7 +25,7 @@
 .one-fourth {
   width: 25%;
 }
-@media (max-width: 480px) {
+@media (max-width: $screen-xs) {
   .one,
   .one-half,
   .one-third,
@@ -33,3 +33,4 @@
     width: 100%;
   }
 }
+
