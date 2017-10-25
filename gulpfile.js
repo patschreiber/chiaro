@@ -14,16 +14,16 @@ var gulp = require('gulp');
     minifyHtml = require('gulp-minify-html');
 
 /**
- * Dependencies will be concatenated in the order stated here. If not defined, gulp will
- * concatenate in the order found in the filesystem.
+ * Dependencies will be concatenated in the order stated here. If not defined,
+ * gulp will concatenate in the order found in the filesystem.
  */
 var cssLocations = [
   './src/sass/chiaro.css.scss'
 ];
 
 /**
- * Dependencies will be concatenated in the order stated here. If not defined, gulp will
- * concatenate in the order found in the filesystem.
+ * Dependencies will be concatenated in the order stated here. If not defined,
+ * gulp will concatenate in the order found in the filesystem.
  */
 var jsLocations = [
   './src/js/vendor/jquery-2.1.4.min.js',
@@ -42,8 +42,8 @@ var imgBuildLocation = './build/img';
 var fontBuildLocation = './build/fonts';
 
 /**
- * Processes css/sass files from multiple locations, minifies, and concatenates them.
- * Puts the minified file in the specified build location
+ * Processes css/sass files from multiple locations, minifies, and concatenates
+ * them. Puts the minified file in the specified build location
  */
 gulp.task('js', function() {
   var opts = {
@@ -81,8 +81,8 @@ gulp.task('img', function() {
 
 
 /**
- * Watches for changes in the css and runs the 'css' task whenever a change is saved.
- * Does not generate new files.
+ * Watches for changes in the css and runs the 'css' task whenever a change is
+ * saved. Does not generate new files.
  *
  */
 gulp.task('css:watch', function() {
@@ -95,8 +95,8 @@ gulp.task('fonts', function() {
 });
 
 /**
- * Watches for changes in the js and runs the 'js' task whenever a change is saved.
- * Does not generate new files.
+ * Watches for changes in the js and runs the 'js' task whenever a change is
+ * saved. Does not generate new files.
  *
  */
 gulp.task('js:watch', function() {
@@ -130,8 +130,8 @@ gulp.task('default', ['css', 'js', 'img', 'fonts', 'process-html']);
 
 
 /**
- * Watches for changes in the project and runs the 'default' task whenever a change is saved.
- * Does not generate new files.
+ * Watches for changes in the project and runs the 'default' task whenever a
+ * change is saved. Does not generate new files.
  *
  */
 gulp.task('watcher:watch', function() {
