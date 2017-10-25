@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $default-font-color;
+  font-family: $default-sans-serif, 'Arial', sans-serif;
+  font-size: $p-font-size;
+  max-width: $default-max-body-width;
+}
+a {
+  display: inline-block;
+  border-bottom: 1px solid $default-grey;
+  text-decoration: none;
+}

@@ -13,7 +13,7 @@
   min-height: 1px;
   padding-left: $default-padding / 2;
   padding-right: $default-padding / 2;
-  width: 33.333333%;
+  width: 100%;
 }
 .showcase .item .text {
   position: absolute;
@@ -40,4 +40,10 @@
 }
 .showcase .item a:hover {
   @include box-shadow-inset;
+}
+
+@media screen and (min-width: $screen-sm) {
+  .showcase .item {
+    width: 33.333333%
+  }
 }
