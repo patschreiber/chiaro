@@ -1,21 +1,5 @@
 nav.horizontal {
-  display: inline-block;
-  width: 100%;
-}
-nav.horizontal > ul {
-  padding: 0;
-  margin: 0;
-}
-nav.horizontal > ul li {
-  display: inline-block;
-}
-nav.horizontal > ul li a {
-  border: 0;
-  display: inline-block;
-  padding: $default-padding * 1.5 ($default-padding * 4) $default-padding * 1.5 ($default-padding * 4);
-  text-decoration: none;
-}
-.splitter {
-  border-right: 1px solid $default-grey-light;
-  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

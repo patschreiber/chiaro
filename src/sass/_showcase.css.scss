@@ -1,10 +1,9 @@
 .showcase {
   color: rgb(255,255,255);
-  margin-top: $default-margin;
-  margin-bottom: $default-margin;
   padding-right: $default-padding / 2;
   padding-left: $default-padding / 2;
   text-shadow: 0 0 10px rgba(0,0,0,0.35);
+  margin: $default-margin 0;
 }
 .showcase .item {
   position: relative;
@@ -22,7 +21,9 @@
   transform: translate(-50%, -50%);
 }
 .showcase .item a {
-  background-color: $default-grey-lightest;
+  background: url('../assets/download.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 5px;
   color: #ffffff;
   display: block;
@@ -42,7 +43,7 @@
   @include box-shadow-inset;
 }
 
-@media screen and (min-width: $screen-sm) {
+@media (min-width: $screen-sm) {
   .showcase .item {
     width: 33.333333%
   }

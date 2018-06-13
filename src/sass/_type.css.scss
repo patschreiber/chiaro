@@ -18,10 +18,10 @@ h6 {
 }
 p {
   font-family: $default-serif;
-  line-height: 1.5;
+  font-size: 18px;
   margin: 0;
 }
-a::after {
+a:after {
   @include link-flair;
   content: ' ';
   height: 1px;
@@ -33,7 +33,7 @@ a::after {
   opacity: 0;
   width: 0;
 }
-a:hover::after {
+a:hover:after {
   width: 100%;
   opacity: 1;
 }
